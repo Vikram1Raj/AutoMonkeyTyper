@@ -3,6 +3,10 @@ An Automatic Keyboard Typer for Monkeytype, which has no practical value, was ma
 
 This Python script uses Selenium to automate the Keyboard type test giving (mostly) error-free 100+wpm.
 
+Checkout and try it on your own:
+
+[Monkeytype](https://monkeytype.com/)
+
 
 
 
