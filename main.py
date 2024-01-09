@@ -21,6 +21,7 @@ try:
 except:
   print("Failed")
 
+#Getting the Test Time
 test_times = driver.find_elements(By.CSS_SELECTOR,".textButton.active")
 actual_time = test_times[1].text
 
@@ -38,7 +39,8 @@ while True:
         print(char)      
     kb.press_and_release("space")
     time.sleep(0.1)
-  
+
+  #Checking if the test ended
   try:
     chart = driver.find_element(By.ID,"wpmChart")
     chart_height = chart.get_attribute("height")
@@ -47,7 +49,8 @@ while True:
       break
   except:
     continue
-  
+
+#Printing the Results
 acc_and_wpm = driver.find_elements(By.CLASS_NAME,"bottom")
 print("ACC and WPM")
 
@@ -55,6 +58,7 @@ print(f"Time = {actual_time} secs ")
 print(f"WPM = {acc_and_wpm[0].text}")
 print(f"Acc = {acc_and_wpm[1].text}")
 
+#Closes the browser
 driver.quit()
     
  
